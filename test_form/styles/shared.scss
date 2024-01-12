@@ -1,0 +1,45 @@
+@import 'mixins.scss';
+
+.desktop {
+    @media only screen and (max-width: 850px) {
+        display: none !important;
+    }
+}
+  
+.mobile {
+    @media only screen and (min-width: 850px) {
+        display: none !important;
+    }
+}
+  
+.closed {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none !important;
+}
+  
+.closed-height {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none !important;
+    height: 0 !important;
+}
+  
+.section,
+.section-abs {
+    position: relative;
+    width: 100%;
+    height: var(--app-height);
+  
+    .inner-container {
+        height: 100%;
+        position: relative;
+    }
+}
+  
+.dropdown {
+    transition: all .3s;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    z-index: 150000;
+}
+

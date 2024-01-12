@@ -1,0 +1,237 @@
+@import 'mixins.scss';
+:root {
+    --color-black: #101010;
+    --color-white: #F1F1F1;
+    --app-height: 100vh;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -ms-overflow-style: none;
+}
+
+@media only screen and (min-width: 850px) {
+     ::-webkit-scrollbar {
+        height: 5px;
+        width: 5px;
+    }
+     ::-webkit-scrollbar-thumb {
+        background-color: #6d6b8d;
+        border-radius: 17px;
+    }
+}
+
+ ::-webkit-scrollbar-button {
+    display: none;
+}
+
+ ::selection {
+    color: #fff;
+    background-color: #6d6b8d;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.2s;
+}
+
+.fade-enter-from,
+.fade-enter,
+.fade-leave-to {
+    opacity: 0;
+}
+
+html,
+body,
+.app,
+.layout,
+#app {
+    padding: 0;
+    margin: 0;
+    color: var(--color-white);
+    font-family: SfProDisplay;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2;
+    background-color: var(--color-black);
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100vh;
+}
+
+body {
+    overflow-y: visible !important;
+}
+
+a,
+button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    text-decoration: none;
+    font-family: inherit;
+    font-weight: inherit;
+    color: inherit;
+    cursor: pointer;
+    font-size: 1.6rem;
+    transition: all .3s;
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+}
+
+input,
+textarea {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-family: inherit;
+    color: inherit;
+    font-size: 1.6rem;
+}
+
+@media only screen and (max-width: 850px) {
+    input,
+    textarea {
+        font-size: 13px;
+    }
+}
+
+textarea {
+    resize: none;
+    overflow: hidden;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+input[type=checkbox] {
+    display: none;
+    width: 0;
+    visibility: hidden;
+}
+
+h1,
+h2 {
+    font-weight: 900;
+}
+
+img,
+picture,
+source,
+video,
+svg {
+    pointer-events: none !important;
+    -webkit-user-drag: none !important;
+    -moz-user-select: none !important;
+    -webkit-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+}
+
+html {
+    /* font-size: 62.5%; */
+    font-size: 10px;
+    /* overflow-y: hidden; */
+}
+
+@media only screen and (max-width: 1300px) {
+    html {
+        font-size: 8.96px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    html {
+        font-size: 8.36px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    html {
+        font-size: 8.04px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    html {
+        font-size: 7.68px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    html {
+        font-size: 7.36px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    html {
+        font-size: 7.04px;
+    }
+}
+
+@media only screen and (max-width: 680px) and (min-height: 800px) {
+    html {
+        font-size: 8px;
+    }
+}
+
+
+/* @media only screen and (max-width: 950px) and (min-height: 900px) and (min-width: 680px) {
+  html {
+    font-size: 8.7px;
+  }
+  } */
+
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 7.5px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    html {
+        font-size: 7.1px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    html {
+        font-size: 6.56px;
+    }
+}
+
+@media only screen and (max-width: 1000px) and (max-height: 520px) {
+    html {
+        font-size: 7px;
+    }
+}
+
+@media only screen and (min-width: 1650px) {
+    html {
+        font-size: 11.68px;
+    }
+}
+
+@media only screen and (min-width: 2400px) {
+    html {
+        font-size: 12.5px;
+    }
+}
